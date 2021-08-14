@@ -1,0 +1,59 @@
+*{
+    list-style: none;
+    
+}
+.slider-dinamyc{
+    background-color: #f2f2f2;
+    margin:.75em auto;
+    width: 800px;
+    padding: 1.875em;
+    color: rgb(46, 43, 43);
+    border-radius: .9375em;
+    .container-img{
+        position: relative;
+        width: 750px;
+        height: 300px;
+        li{
+                    position:absolute;
+                    left: 0;
+                    top: 0;
+            opacity: 0;
+                    width: inherit;
+                    height: inherit;
+                    transition: opacity .5s;
+            background-color: #f2f2f2;
+         
+        &:nth-child(1){
+            opacity: 1;
+        }
+        
+                    // el efecto se ejecuta            
+        &:target{opacity: 1;}
+            img{
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.container-adres{
+        display: flex;
+        width: 50%;
+        margin:12px auto;
+        flex-direction: row;
+        justify-content: space-around;      
+    a{
+                border-radius: 50%;
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(8, 6, 6);
+                padding: 10px 14px;
+                font-weight: bold;
+            }
+}
+            
